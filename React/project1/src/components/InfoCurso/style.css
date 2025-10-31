@@ -1,0 +1,12 @@
+
+.InfoCurso h1 {
+    color: #333;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+.InfoCurso p {
+    color: #666;
+    font-size: 1.2em;
+}
