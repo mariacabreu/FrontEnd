@@ -1,0 +1,16 @@
+/* Estilo do cabeçalho */
+header {
+  background-color: transparent; /* sem fundo */
+  color: #2a4d69; /* azul-educacional elegante */
+  text-align: center;
+  padding: 25px 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  border-bottom: 2px solid #e0e0e0; /* linha sutil abaixo */
+}
+
+/* Texto do título */
+header div {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}

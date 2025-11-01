@@ -1,0 +1,88 @@
+/* Container principal em duas colunas */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 85%;              /* ficou um pouco mais largo */
+  margin: 40px auto;
+  gap: 50px;               /* espaço entre as colunas */
+  font-family: Arial, sans-serif;
+}
+
+/* Coluna esquerda - formulário */
+.formulario {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 30px;           /* mais espaço interno */
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;               /* espaçamento maior entre os campos */
+}
+
+.formulario input {
+  padding: 12px;           /* aumenta o tamanho da caixa */
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.formulario button {
+  padding: 12px;
+  font-size: 18px;
+  background-color: #3f4347;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.formulario button:hover {
+  background-color: #35383b;
+  transform: scale(1.02);
+}
+
+/* Coluna direita - lista */
+.lista-alunos {
+  flex: 1;
+  background-color: #f8f9fa;
+  padding: 30px;           /* mais espaço interno */
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  min-height: 300px;       /* altura mínima */
+}
+
+.lista-alunos h3 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  text-align: center;
+}
+
+.lista-alunos ol {
+  padding-left: 25px;
+  font-size: 18px;         /* texto um pouco maior */
+}
+
+.lista-alunos li {
+  margin-bottom: 8px;
+}
+
+/* --- Responsividade --- */
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    gap: 30px;
+    width: 90%;
+  }
+}
